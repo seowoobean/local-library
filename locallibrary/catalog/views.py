@@ -26,7 +26,7 @@ def index(request):
     
     # The 'all()' is implied by default.    
     num_authors = Author.objects.count()
-    
+    genre_contain = Genre.objects.filter(name__exact='a')
     context = {
         'num_books': num_books,
         'num_instances': num_instances,
