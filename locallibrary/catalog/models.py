@@ -70,8 +70,7 @@ class Author(models.Model):
         return f'{self.last_name}, {self.first_name}'
 
 class Language(models.Model):
-    name = models.CharField(max_length=200,
-                            help_text="Enter the book's natural language (e.g. English, French, Japanese etc.)")
+    name = models.CharField(max_length=200, help_text="Enter the book's natural language (e.g. English, French, Japanese etc.)")
 
     def __str__(self):
         return self.name
